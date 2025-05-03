@@ -1,0 +1,60 @@
+body {
+    background-color: rgb(36, 35, 35);
+}
+
+aside {
+    float: left;
+    background: black;
+    width: 20%;
+    padding: 2.5%;
+    height: 100vh;
+    color: #fff;
+    border-right: 5px solid green;
+}
+
+aside img {
+    width: 150px;
+    float: left;
+}
+
+aside .logo {
+    font-size: 40px;
+    margin-left: 10px;
+    font-weight: bold;
+
+}
+
+aside h3 {
+    margin-top: 50px;
+    font-size: 28px;
+}
+
+aside ul {
+    list-style: none;
+}
+
+aside ul li a {
+    color: white;
+    display: block;
+    margin-top: 20px;
+    text-decoration: none;
+
+}
+
+
+.features {
+    float: left;
+    color: white;
+    margin-top: 100px;
+    text-align: center;
+    width: 75%;
+}
+
+h1 {
+    font-size: 50px;
+}
+
+.features p {
+    max-width: 400px;
+    margin: 20px auto;
+}

@@ -1,0 +1,13 @@
+{% extends 'main/layout.html' %}
+
+{% block title %}Про222{% endblock %}
+
+{% block content %}
+    <div class ='features'>
+        <h1>Главная страница</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa reprehenderit laudantium, adipisci voluptates velit, unde mollitia temporibus aut, placeat perspiciatis itaque ipsum sapiente dolor doloribus vel ea fugiat enim reiciendis!</p>
+        <button class='btn btn-warning'>Кнопка</button>
+    </div>
+
+    {% include 'main/test.html' %}
+{% endblock %}
