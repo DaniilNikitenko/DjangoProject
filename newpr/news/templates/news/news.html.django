@@ -1,14 +1,24 @@
 {% extends 'main/layout.html' %}
 
-{% block title %}{{ title }}{% endblock %}
+{% block title %}Новости{% endblock %}
 
 {% block content %}
 <div class='features'>
-    <h1>{{ title }}</h1>
+    <h1>Новости</h1>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa reprehenderit laudantium, adipisci voluptates
         velit, unde mollitia temporibus aut, placeat perspiciatis itaque ipsum sapiente dolor doloribus vel ea fugiat
         enim reiciendis!</p>
     <button class='btn btn-danger'>Кнопка</button>
+    {% if news %}
+        {% for i in news %}
+            <div class="alert alert-warning">
+                <h3>{{i.title}}</h3>
+                <h3>{{i.anons}}</h3>
+            </div>
+        {% endfor %}
+    {% else %}
+        <p>У вас нет записей</p>
+    {% endif %}
     
 </div>
 {% endblock %}
